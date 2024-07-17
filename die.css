@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Gname {
+    text-align: center;
+    margin: 10px;
+    color: chartreuse;
+}
+
+#section {
+    border: 2px solid greenyellow;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 200px;
+    padding: 10px;
+    height: 500px;
+}
+
+#player1,
+#player2 {
+    border: 2px solid gray;
+    text-align: center;
+}
+
+#spin_value {
+    border: 2px solid green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    bottom: 260px;
+    left: 610px;
+    text-align: center;
+    line-height: 150px;
+    color: rgb(233, 115, 143);
+}
+
+h2 {
+    border: 1px solid gold;
+    margin: 10px;
+    padding: 5px;
+}
+
+h3 {
+    position: relative;
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p {
+    background-image: url(./download.png);
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 100px 150px;
+}
+
+#spinner1{
+    border: 1px solid blue;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    color: rgb(130, 182, 238);
+    position: absolute;
+    bottom: 190px;
+    left: 635px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#spinner2{
+    border: 1px solid blue;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    color: rgb(130, 182, 238);
+    position: absolute;
+    bottom: 190px;
+    left: 635px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#start{
+    border: 1px solid violet;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    color: rgb(255, 0, 157);
+    position: absolute;
+    bottom: 425px;
+    left: 630px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
