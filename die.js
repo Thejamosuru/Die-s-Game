@@ -3,13 +3,13 @@ let start = document.getElementById('start');
 let Player1;
 let Player2;
 let start_Game = () => {
-    Player1 = prompt('Enter Player name');
-    Player2 = prompt('Enter Player name');
+    Player1 = prompt('Enter Player1 name');
+    Player2 = prompt('Enter Player2 name');
     document.getElementById('player_name1').innerHTML = `${Player1}`;
     document.getElementById('player_name2').innerHTML = `${Player2}`;
-    let player_name = prompt('Who want to play first');
+    let player_name = prompt(`Who want to play first "${Player1}" or "${Player2}"`);
     if (Player1 == player_name) {
-        document.getElementById('user_img1').style.border = '5px solid rgb(182, 10, 10)';
+        document.getElementById('user_img1').style.border = '5px solid lawngreen';
         document.getElementById('user_img2').style.border = '2px solid gray';
         document.getElementById('spinner1').style.display = 'inline';
         document.getElementById('spinner2').style.display = 'none';
@@ -18,7 +18,7 @@ let start_Game = () => {
     }
     else {
         document.getElementById('user_img1').style.border = '2px solid gray';
-        document.getElementById('user_img2').style.border = '5px solid rgb(182, 10, 10)';
+        document.getElementById('user_img2').style.border = '5px solid lawngreen';
         document.getElementById('spinner1').style.display = 'none';
         document.getElementById('spinner2').style.display = 'inline';
         document.getElementById('player_name2').style.background = 'green';
@@ -89,7 +89,7 @@ spinner2.addEventListener('click', spin_start2)
 
 //-----player_one-----
 let Player_one = () => {
-    document.getElementById('user_img1').style.border = '5px solid rgb(182, 10, 10)';
+    document.getElementById('user_img1').style.border = '5px solid lawngreen';
     document.getElementById('user_img2').style.border = '2px solid gray';
     document.getElementById('spinner1').style.display = 'inline';
     document.getElementById('spinner2').style.display = 'none';
@@ -102,7 +102,7 @@ let Player_one = () => {
 //-----Player_Two------
 let Player_two = () => {
     document.getElementById('user_img1').style.border = '2px solid gray';
-    document.getElementById('user_img2').style.border = '5px solid rgb(182, 10, 10)';
+    document.getElementById('user_img2').style.border = '5px solid lawngreen';
     document.getElementById('spinner1').style.display = 'none';
     document.getElementById('spinner2').style.display = 'inline';
     document.getElementById('player_name1').style.background = 'white';
@@ -110,5 +110,18 @@ let Player_two = () => {
     document.getElementById('player_name2').style.background = 'green';
     document.getElementById('player_name2').style.color = 'white';
 }
+
+//------Upload player's image-----
+ 
+let loadfile = function(event){
+    var image = document.getElementById('user_img1');
+    image.src = URL.createObjectURL(event.target.files[0]);
+}
+
+let loadfile2 = function(event){
+    var image1 = document.getElementById('user_img2');
+    image1.src=URL.createObjectURL(event.target.files[0])
+}
+
 
 

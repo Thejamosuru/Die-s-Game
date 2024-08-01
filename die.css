@@ -53,7 +53,7 @@ h3 {
     border-radius: 10px;
 }
 
-p {
+#user_img1,#user_img2 {
     background-image: url(./download.png);
     background-size: 100%;
     width: 150px;
@@ -76,6 +76,7 @@ p {
     left: 635px;
     font-size: 20px;
     cursor: pointer;
+    display: none;
 }
 #spinner2{
     border: 1px solid blue;
@@ -90,6 +91,7 @@ p {
     left: 635px;
     font-size: 20px;
     cursor: pointer;
+    display: none;
 }
 #start{
     border: 1px solid violet;
@@ -104,5 +106,8 @@ p {
     left: 630px;
     font-size: 20px;
     cursor: pointer;
+}
+input{
+    display: none;
 }
 

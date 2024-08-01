@@ -12,13 +12,15 @@
         <div id="player1">
             <h2 id="player_name1">Player1</h2>
             <div id="winner1"></div>
-            <p id="user_img1"></p>
+            <label for="Img"><img id="user_img1"></label>
+            <input type="file" id="Img" accept="image/jpg,image/png" onchange="loadfile(event)">
             <h3 id="user1_scr">Score:- 0</h3>
         </div>
         <div id="player2">
             <h2 id="player_name2">Player2</h2>
             <div id="winner2"></div>
-            <p id="user_img2"></p>
+            <label for="Img2"><img id="user_img2"></label>
+            <input type="file" id="Img2" accept="image/jpg,image/png" onchange="loadfile2(event)">
             <h3 id="user2_scr">Score:- 0</h3>
         </div>
     </div>
